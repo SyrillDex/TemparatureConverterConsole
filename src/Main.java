@@ -53,7 +53,19 @@ public class Main {
         }
         break;
       case "C":
-        System.out.println(temp);
+        switch (centigrade) {
+          case "C":
+            System.out.println(temp + " " + conversionTypeInput);
+            break;
+          case "K":
+            result = (float) (temp - 273.15);
+            System.out.println(result + " " + conversionTypeInput);
+            break;
+          case "F":
+            result = (float) (temp - 32) * 5/9;
+            System.out.println(result + " " + conversionTypeInput);
+            break;
+        }
         break;
       case "K":
         System.out.println(temp);
