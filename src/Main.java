@@ -21,7 +21,7 @@ public class Main {
     double temp;
 
     if (!centigrade.equals("C") && !centigrade.equals("F") && !centigrade.equals("K")) {
-      System.out.println("Please enter a valid centigrade");
+      System.out.println("Please enter a valid centigrade/input");
       return;
     }
 
