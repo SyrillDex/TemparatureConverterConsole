@@ -68,11 +68,22 @@ public class Main {
         }
         break;
       case "K":
-        System.out.println(temp);
+        switch (centigrade) {
+          case "C":
+            result = (float) (temp + 273.15);
+            System.out.println(result + " " + conversionTypeInput);
+            break;
+          case "K":
+            System.out.println(temp + " " + conversionTypeInput);
+            break;
+          case "F":
+            result = (float) ((temp - 32) * ((double) 5 /9) + 273.15) ;
+            System.out.println(result + " " + conversionTypeInput);
+            break;
+        }
         break;
       default:
         System.out.println("Please enter a valid centigrade");
     }
-
   }
 }
